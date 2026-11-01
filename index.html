@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b70">
+  <title>Vall Sena | Plataforma de Saúde</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fc;
+      color: #193454;
+    }
+
+    header {
+      background: #123b70;
+      color: white;
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #e6c36a;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #123b70, #2469a9);
+      color: white;
+      padding: 75px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 44px);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #e6c36a;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn-gold {
+      background: #e6c36a;
+      color: #123b70;
+    }
+
+    .btn-white {
+      background: white;
+      color: #123b70;
+    }
+
+    .section {
+      padding: 55px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #123b70;
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+
+    .section > p {
+      color: #63758a;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 27px 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #123b7010;
+      border-bottom: 3px solid #e6c36a;
+    }
+
+    .card .symbol {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #123b70;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #63758a;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #123b70;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    footer span {
+      color: #e6c36a;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">VALL <span>SENA</span></div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>Sua saúde em um só <span>lugar!</span></h1>
+
+      <p>
+        Bem-vindo à Plataforma de Saúde Vall Sena.
+        Uma experiência digital para organizar suas informações,
+        acompanhar seus exames e cuidar melhor da sua saúde.
+      </p>
+
+      <div class="buttons">
+        <a href="#servicos" class="btn btn-gold">
+          Conhecer a plataforma
+        </a>
+
+        <a href="#sobre" class="btn btn-white">
+          Saiba mais
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <h2>Conheça nossos recursos</h2>
+      <p>Tudo organizado para facilitar seu cuidado com a saúde.</p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="symbol">💳</div>
+          <h3>Carteira digital</h3>
+          <p>Organização de documentos e informações de saúde.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📅</div>
+          <h3>Agendamentos</h3>
+          <p>Área para organizar consultas e compromissos.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🧪</div>
+          <h3>Exames</h3>
+          <p>Espaço para organizar resultados e documentos.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">❤️</div>
+          <h3>Histórico de saúde</h3>
+          <p>Organização do histórico pessoal de saúde.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🔔</div>
+          <h3>Notificações</h3>
+          <p>Área destinada a lembretes e avisos.</p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🔒</div>
+          <h3>Privacidade</h3>
+          <p>Compromisso com a proteção das informações pessoais.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <h2>Vall Sena Plataforma de Saúde</h2>
+      <p>
+        Tecnologia, organização e cuidado em uma única plataforma.
+        Estamos construindo uma experiência digital para facilitar
+        a vida dos pacientes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>VALL SENA</strong>
+    <span> | Plataforma de Saúde</span>
+    <br>
+    © 2026 - Todos os direitos reservados.
+    <br>
+    Projeto em desenvolvimento.
+  </footer>
+
+</body>
+</html>
